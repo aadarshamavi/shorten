@@ -1,5 +1,5 @@
 import db from '@/lib/db';
-import { redirect } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import React from 'react'
 
 const page = async ({ params }: {
@@ -19,7 +19,7 @@ const page = async ({ params }: {
         return redirect(dbLink.originalLink)
     }
   return (
-    <div>The url is not valid</div>
+    notFound()
   )
 }
 

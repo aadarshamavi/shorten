@@ -1,4 +1,4 @@
-import ShortenUrlForm from '@/components/ui/ShortenUrlForm'
+import ShortenUrlForm from '@/components/ShortenUrlForm'
 import React from 'react'
 
 const page = () => {

@@ -12,7 +12,7 @@ datasource db {
 
 model Link {
   id           String   @id @default(cuid())
-  originalLink String
+  originalLink String   @unique
   shortenLink  String   @unique
   created_at   DateTime @default(now())
 }
